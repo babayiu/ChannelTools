@@ -22,6 +22,7 @@ T.me/Nic_Source
 	$ADMINS = ['ADMIN'];
 	// کانال اتچ
 	$attachChannel = "@ATACH";
+        echo date("Y-m-d", $next
 	// کانال مقصد
 	$MyChannel = "@Nic_Source";
 	// تبلیغات شما
