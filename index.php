@@ -6,7 +6,7 @@
 T.me/Nic_Source
 */
 
-	ini_set('display_errors', 0);
+	ini_set('disply_errors', 0);
 	ini_set('display_startup_errors', 0)
 	error_reporting(E_ALL);
 	
