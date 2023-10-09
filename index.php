@@ -25,6 +25,20 @@ T.me/Nic_Source
         echo date("Y-m-d", $next
 	// کانال مقصد
 	$MyChannel = "@Nic_Source";
+<?php
+$token = 'YOUR_BOT_TOKEN';
+$chat_id = 'TARGET_CHAT_ID';
+$sticker_id = 'STICKER_FILE_ID';
+
+$url = "https://api.telegram.org/bot$token/sendSticker";
+$data = array(
+    'chat_id' => $chat_id,
+    'sticker' => $sticker_id
+);
+
+file_get_contents($url . '?' . http_build_query($data));
+?>
+
 	// تبلیغات شما
 	$ADV = "
 	-------------------
