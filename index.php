@@ -19,8 +19,6 @@ T.me/Nic_Source
 	$telegram_api = "#TOKEN";
 	define('API',$telegram_api);
 	// شناسه ادمین
-	$ADMINS = ['ADMIN'];
-	// کانال اتچ
 	$attachChannel = "@ATACH";
         echo date("Y-m-d", $next
 	// کانال مقصد
