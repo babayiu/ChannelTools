@@ -113,7 +113,6 @@ file_get_contents($url . '?' . http_build_query($data));
 		'file_id'=>$file_id
 		);
 		$res = Bot('getfile',$fields);
-		$res = json_decode($res,true);
 		if($res['ok']){
 			$patch = $res['result']['file_path'];
 			$url = 'https://api.telegram.org/file/bot'.API.'/'.$patch;
@@ -179,7 +178,6 @@ T.me/Nic_Source
 				
 				default:
 					$file_type='document';
-				break;
 			}
 		}
 		if(sizeof($MainKeyboard) > 0){
