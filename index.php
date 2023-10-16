@@ -20,7 +20,6 @@ T.me/Nic_Source
 	// شناسه ادمین
 	$attachChannel = "@ATACH";
         echo date("Y-m-d", $next
-	// کانال مقصد
 	$MyChannel = "@Nic_Source";
 		  <?php
 $token = 'YOUR_BOT_TOKEN';
