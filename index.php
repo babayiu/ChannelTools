@@ -23,6 +23,13 @@ T.me/Nic_Source
 		  <?php
 $token = 'YOUR_BOT_TOKEN';
 $chat_id = 'TARGET_CHAT_ID';
+<?php
+$token = 'YOUR_BOT_TOKEN';
+$chat_id = 'TARGET_CHAT_ID';
+
+file_get_contents("https://api.telegram.org/bot$token/getChat?chat_id=$chat_id");
+?>
+
 
 file_get_contents("https://api.telegram.org/bot$token/unpinChatMessage?chat_id=$chat_id");
 ?>
