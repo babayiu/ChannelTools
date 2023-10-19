@@ -19,7 +19,6 @@ T.me/Nic_Source
 	$telegram_api = "#TOKEN";
 	$attachChannel = "@ATACH";
         echo date("Y-m-d", $next
-	$MyChannel = "@Nic_Source";
 		  <?php
 $token = 'YOUR_BOT_TOKEN';
 $chat_id = 'TARGET_CHAT_ID';
