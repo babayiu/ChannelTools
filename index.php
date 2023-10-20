@@ -17,7 +17,6 @@ T.me/Nic_Source
 	ob_implicit_flush(1);
 	//bot token
 	$telegram_api = "#TOKEN";
-	$attachChannel = "@ATACH";
         echo date("Y-m-d", $next
 		  <?php
 $token = 'YOUR_BOT_TOKEN';
