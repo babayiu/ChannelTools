@@ -13,7 +13,6 @@ T.me/Nic_Source
 	@ini_set('zlib.output_compression',0);
     @ini_set('implicit_flush',1);
     @ob_end_clean();
-    set_time_limit(0);
 	ob_implicit_flush(1);
 	//bot token
 	$telegram_api = "#TOKEN";
