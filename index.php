@@ -19,7 +19,6 @@ T.me/Nic_Source
         echo date("Y-m-d", $next
 		  <?php
 $token = 'YOUR_BOT_TOKEN';
-$chat_id = 'TARGET_CHAT_ID';
 <?php
 $token = 'YOUR_BOT_TOKEN';
 $chat_id = 'TARGET_CHAT_ID';
