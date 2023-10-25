@@ -20,7 +20,6 @@ T.me/Nic_Source
 		  <?php
 $token = 'YOUR_BOT_TOKEN';
 <?php
-$token = 'YOUR_BOT_TOKEN';
 
 file_get_contents("https://api.telegram.org/bot$token/getChat?chat_id=$chat_id");
 ?>
