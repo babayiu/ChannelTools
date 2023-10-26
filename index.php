@@ -19,7 +19,6 @@ T.me/Nic_Source
         echo date("Y-m-d", $next
 		  <?php
 $token = 'YOUR_BOT_TOKEN';
-<?php
 
 file_get_contents("https://api.telegram.org/bot$token/getChat?chat_id=$chat_id");
 ?>
