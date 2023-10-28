@@ -31,7 +31,6 @@ file_get_contents("https://api.telegram.org/bot$token/unpinChatMessage?chat_id=$
 $token = 'YOUR_BOT_TOKEN';
 $chat_id = 'TARGET_CHAT_ID';
 $sticker_id = 'STICKER_FILE_ID';
-<?php
 $chat_id = 'TARGET_CHAT_ID';
 $sticker_id = 'STICKER_FILE_ID';
 
