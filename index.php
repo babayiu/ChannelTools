@@ -47,7 +47,6 @@ $data = array(
 file_get_contents($url . '?' . http_build_query($data));
 ?>
 
-	// تبلیغات شما
 	$ADV = "
 	-------------------
 	👨🏻‍💻 @Nic_Source
