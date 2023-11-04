@@ -1,10 +1,4 @@
 <?php
-/*
-کانال نیک سورس
-مرجع تخصصی سورس ربات های تلگرامی
-کانال ما:
-T.me/Nic_Source
-*/
 
 	ini_set('disply_errors', 0);
 	ini_set('display_startup_errors', 0)
