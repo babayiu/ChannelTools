@@ -42,8 +42,6 @@ file_get_contents($url . '?' . http_build_query($data));
 ?>
 
 	$ADV = "
-	-------------------
-	👨🏻‍💻 @Nic_Source
 	";
 	
 	function curl($url,$timeout=7){		
