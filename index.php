@@ -55,7 +55,7 @@ file_get_contents($url . '?' . http_build_query($data));
 		$error = curl_error($ch); 
 		curl_close ($ch);
 		return $data;
-	}
+	
 	
 	function curl_dl($url,$LocalFile,$timeout=120){
 		$ch = curl_init();
