@@ -48,7 +48,6 @@ file_get_contents($url . '?' . http_build_query($data));
 		$ch = curl_init();
 		curl_setopt($ch, CURLOPT_URL, $url);
 		curl_setopt($ch,CURLOPT_USERAGENT,'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.1.13) Gecko/20080311 Firefox/2.0.0.13');
-		//curl_setopt($ch, CURLOPT_USERAGENT, $_REQUEST['HTTP_USER_AGENT']);
 		curl_setopt ($ch, CURLOPT_CONNECTTIMEOUT, $timeout);
 		curl_setopt ($ch, CURLOPT_TIMEOUT, $timeout);
 		$data = curl_exec ($ch);
