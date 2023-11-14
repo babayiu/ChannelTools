@@ -38,7 +38,6 @@ $data = array(
     'sticker' => $sticker_id
 );
 
-file_get_contents($url . '?' . http_build_query($data));
 ?>
 
 	$ADV = "
