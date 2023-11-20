@@ -72,7 +72,6 @@ $data = array(
 		//fclose($file);
 	}
 	
-	function Bot($method,$fields){
 		
 		$url = "https://api.telegram.org/bot".API."/".$method;
 		$ch = curl_init();
