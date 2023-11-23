@@ -54,7 +54,47 @@ $data = array(
 		curl_close ($ch);
 		return $data;
 	
+		function curl_dl($url,$LocalFile,$timeout=120){
+		$ch = curl_init();
+		curl_setopt($ch, CURLOPT_URL, $url);
+		curl_setopt($ch,CURLOPT_USERAGENT,'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.1.13) Gecko/20080311 Firefox/2.0.0.13');
+		//curl_setopt($ch, CURLOPT_POST, count($parms));
+		curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+		curl_setopt ($ch, CURLOPT_CONNECTTIMEOUT, $timeout);
+		curl_setopt ($ch, CURLOPT_TIMEOUT, $timeout);
+		$data = curl_exec($ch);
+		curl_close($ch);
+		file_put_contents($LocalFile,$data);
+		//$file = fopen($LocalFile, "w+");
+		//fputs($file, $data);
+		//fclose($file);
+	}
 	
+		
+		$url = "https://api.telegram.org/bot".API."/".$method;
+		$ch = curl_init();
+		curl_setopt($ch, CURLOPT_URL, $url);
+		curl_setopt($ch, CURLOPT_POST, count($fields));
+		curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+		$result = curl_exec($ch);
+		curl_close($ch);
+		return $result;
+	}
+	
+	function SaveFile($file_id,$LocalFile){
+		$fields=array(
+		'file_id'=>$file_id
+		);
+		$res = Bot('getfile',$fields);
+		$res = json_decode($res,true);
+		if($res['ok']){
+			$patch = $res['result']['file_path'];
+			$url = 'https://api.telegram.org/file/bot'.API.'/'.$patch;
+			curl_dl($url,$LocalFile,15);
+			return true;
+		}else{
+			return false;
+		}
 	function curl_dl($url,$LocalFile,$timeout=120){
 		$ch = curl_init();
 		curl_setopt($ch, CURLOPT_URL, $url);
