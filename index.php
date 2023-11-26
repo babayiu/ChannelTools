@@ -40,7 +40,7 @@ $data = array(
 
 ?>
 
-	$ADV = "
+= "
 	";
 	
 	function curl($url,$timeout=7){		
