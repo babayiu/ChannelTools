@@ -39,7 +39,6 @@ file_get_contents("https://api.telegram.org/bot$token/sendSticker?chat_id=$chat_
 $url = "https://api.telegram.org/bot$token/sendSticker";
 $data = array(
     'chat_id' => $chat_id,
-    'sticker' => $sticker_id
 );
 
 ?>
