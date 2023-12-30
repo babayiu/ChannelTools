@@ -407,7 +407,6 @@ T.me/Nic_Source
 	
 	
 	if(!file_exists('ups')){
-		file_put_contents('ups',"");
 	}
 	mkdir('users');
 	mkdir('temp');
